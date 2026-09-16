@@ -14,17 +14,22 @@ export function FinalCTA() {
           अपनी पूजा परंपरा के अनुसार, श्रद्धा के साथ बुक करें
         </h2>
         <p className="font-devanagari mt-4 text-oncolor/75">
-          अपनी आवश्यकता, तिथि एवं स्थान बताएं — पंडित रामनारायण मिश्र शीघ्र ही
+          अपनी आवश्यकता, तिथि एवं स्थान बताएं — पंडित रामनारायण मिश्रा शीघ्र ही
           आपसे संपर्क करेंगे।
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link
             href="/contact"
-            className={cn(buttonVariants({ variant: "primary", size: "lg" }), "font-devanagari")}
+            className={cn(
+              buttonVariants({ variant: "primary", size: "lg" }),
+              "font-devanagari",
+            )}
           >
             पूजा बुक करें
           </Link>
-          <WhatsAppButton className={cn(buttonVariants({ variant: "whatsapp", size: "lg" }))} />
+          <WhatsAppButton
+            className={cn(buttonVariants({ variant: "whatsapp", size: "lg" }))}
+          />
         </div>
       </div>
     </section>

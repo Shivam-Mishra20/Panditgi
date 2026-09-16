@@ -58,7 +58,7 @@ export function Hero() {
         {/* Left: copy */}
         <div>
           <span className="font-devanagari inline-block rounded-full border border-gold/40 bg-surface/70 px-4 py-1.5 text-sm text-heading">
-            पंडित रामनारायण मिश्र
+            पंडित रामनारायण मिश्रा
           </span>
 
           <h1 className="font-devanagari mt-5 text-balance text-4xl font-semibold leading-tight text-heading sm:text-5xl md:text-6xl">
@@ -66,7 +66,7 @@ export function Hero() {
           </h1>
 
           <p className="font-devanagari mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-            पंडित रामनारायण मिश्र आपके परिवार के लिए पूजा, वैदिक अनुष्ठान,
+            पंडित रामनारायण मिश्रा आपके परिवार के लिए पूजा, वैदिक अनुष्ठान,
             संस्कार, विवाह, हवन, कथा-पाठ एवं ज्योतिष परामर्श परंपरा के अनुसार
             श्रद्धापूर्वक सम्पन्न कराते हैं।
           </p>
@@ -122,7 +122,7 @@ export function Hero() {
             <div className="relative aspect-[4/5] overflow-hidden rounded-t-[9999px] rounded-b-[1.6rem] border border-gold/20 bg-gradient-to-b from-cream-dark to-surface">
               <Image
                 src="/images/hero/panditji.png"
-                alt="पंडित रामनारायण मिश्र पूजा करते हुए"
+                alt="पंडित रामनारायण मिश्रा पूजा करते हुए"
                 fill
                 priority
                 sizes="(max-width: 1024px) 90vw, 450px"
@@ -145,7 +145,7 @@ export function Hero() {
           </div>
 
           <p className="mt-9 text-center text-xs text-ink-soft/70 lg:hidden">
-            पंडित रामनारायण मिश्र
+            पंडित रामनारायण मिश्रा
           </p>
         </div>
       </div>

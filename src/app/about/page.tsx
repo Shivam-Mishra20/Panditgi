@@ -11,7 +11,7 @@ import { cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "हमारे बारे में — Pandit Ramnarayan Mishra",
   description:
-    "पंडित रामनारायण मिश्र के बारे में जानें — परंपरा, वैदिक विधि एवं श्रद्धा के साथ पूजा, संस्कार, विवाह एवं ज्योतिष सेवाएं।",
+    "पंडित रामनारायण मिश्रा के बारे में जानें — परंपरा, वैदिक विधि एवं श्रद्धा के साथ पूजा, संस्कार, विवाह एवं ज्योतिष सेवाएं।",
   alternates: { canonical: "/about" },
 };
 
@@ -53,12 +53,12 @@ export default function AboutPage() {
       <section className="mx-auto grid max-w-7xl items-center gap-12 px-4 py-10 sm:px-6 lg:grid-cols-2 lg:px-8">
         <div>
           <h1 className="font-devanagari text-4xl font-semibold text-heading">
-            पंडित रामनारायण मिश्र
+            पंडित रामनारायण मिश्रा
           </h1>
           <p className="font-devanagari mt-5 text-lg leading-relaxed text-ink-soft">
-            पंडित रामनारायण मिश्र एक अनुभवी हिंदू पंडित हैं, जो पूजा, वैदिक
-            अनुष्ठान, संस्कार, विवाह, हवन, कथा-पाठ एवं ज्योतिष परामर्श
-            परंपरा के अनुसार श्रद्धापूर्वक सम्पन्न कराते हैं।
+            पंडित रामनारायण मिश्रा एक अनुभवी हिंदू पंडित हैं, जो पूजा, वैदिक
+            अनुष्ठान, संस्कार, विवाह, हवन, कथा-पाठ एवं ज्योतिष परामर्श परंपरा के
+            अनुसार श्रद्धापूर्वक सम्पन्न कराते हैं।
           </p>
           <p className="font-devanagari mt-4 leading-relaxed text-ink-soft">
             उनका उद्देश्य प्रत्येक परिवार की पारंपरिक मान्यताओं का सम्मान करते
@@ -68,7 +68,10 @@ export default function AboutPage() {
           <div className="mt-8">
             <Link
               href="/contact"
-              className={cn(buttonVariants({ variant: "primary", size: "lg" }), "font-devanagari")}
+              className={cn(
+                buttonVariants({ variant: "primary", size: "lg" }),
+                "font-devanagari",
+              )}
             >
               संपर्क करें
             </Link>
@@ -90,7 +93,10 @@ export default function AboutPage() {
               className="rounded-2xl border border-gold/20 bg-surface p-6 text-center shadow-[0_2px_16px_rgba(94,26,31,0.05)]"
             >
               <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-saffron/10">
-                <Icon className="h-6 w-6 text-saffron-dark" aria-hidden="true" />
+                <Icon
+                  className="h-6 w-6 text-saffron-dark"
+                  aria-hidden="true"
+                />
               </div>
               <h3 className="font-devanagari mt-4 text-base font-semibold text-heading">
                 {title}

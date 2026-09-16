@@ -8,7 +8,7 @@ import { siteConfig, getCallLink, getEmailLink } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "संपर्क करें — पूजा बुक करें",
   description:
-    "पूजा, संस्कार, विवाह, कथा या ज्योतिष परामर्श बुक करने हेतु पंडित रामनारायण मिश्र से संपर्क करें — कॉल, WhatsApp या फॉर्म के माध्यम से।",
+    "पूजा, संस्कार, विवाह, कथा या ज्योतिष परामर्श बुक करने हेतु पंडित रामनारायण मिश्रा से संपर्क करें — कॉल, WhatsApp या फॉर्म के माध्यम से।",
   alternates: { canonical: "/contact" },
 };
 
@@ -23,8 +23,8 @@ export default function ContactPage() {
             संपर्क करें
           </h1>
           <p className="font-devanagari mt-4 leading-relaxed text-ink-soft">
-            अपनी पूजा, संस्कार, विवाह, कथा या ज्योतिष परामर्श से जुड़ी
-            आवश्यकता बताएं — पंडित जी शीघ्र ही आपसे संपर्क करेंगे।
+            अपनी पूजा, संस्कार, विवाह, कथा या ज्योतिष परामर्श से जुड़ी आवश्यकता
+            बताएं — पंडित जी शीघ्र ही आपसे संपर्क करेंगे।
           </p>
 
           <div className="mt-8 space-y-4">
@@ -33,7 +33,9 @@ export default function ContactPage() {
               className="flex items-center gap-3 rounded-xl border border-gold/25 bg-surface px-4 py-3.5 text-heading hover:border-saffron/50"
             >
               <Phone className="h-5 w-5 text-saffron-dark" aria-hidden="true" />
-              <span className="font-devanagari font-medium">{siteConfig.phone}</span>
+              <span className="font-devanagari font-medium">
+                {siteConfig.phone}
+              </span>
             </a>
             <a
               href={getEmailLink()}
@@ -43,7 +45,10 @@ export default function ContactPage() {
               <span className="break-all font-medium">{siteConfig.email}</span>
             </a>
             <div className="flex items-center gap-3 rounded-xl border border-gold/25 bg-surface px-4 py-3.5 text-heading">
-              <MapPin className="h-5 w-5 text-saffron-dark" aria-hidden="true" />
+              <MapPin
+                className="h-5 w-5 text-saffron-dark"
+                aria-hidden="true"
+              />
               <span className="font-devanagari font-medium">
                 {siteConfig.city}, {siteConfig.state}
               </span>
