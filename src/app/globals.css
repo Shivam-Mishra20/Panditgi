@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/* Class-based dark mode: <html class="dark"> toggled by next-themes */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-devanagari: "Noto Serif Devanagari", "Inter", ui-serif, Georgia, serif;
+
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-surface: var(--surface);
+  --color-saffron: var(--saffron);
+  --color-saffron-dark: var(--saffron-dark);
+  --color-maroon: var(--maroon);
+  --color-maroon-light: var(--maroon-light);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+
+  /* Heading/emphasis text: deep maroon on light bg, warm gold on dark bg */
+  --color-heading: var(--heading);
+  --color-heading-light: var(--heading-light);
+
+  /* Fixed light text/border for permanently-dark surfaces (maroon bands),
+     intentionally does NOT flip with theme */
+  --color-oncolor: #fbf6ec;
+
+  /* Form validation */
+  --color-error: var(--error);
+}
+
+:root {
+  color-scheme: light;
+
+  --cream: #fbf6ec;
+  --cream-dark: #f3ead9;
+  --surface: #fffdf8;
+  --saffron: #d97b1f;
+  --saffron-dark: #b8630f;
+  --maroon: #5e1a1f;
+  --maroon-light: #7a2530;
+  --gold: #ab8752;
+  --gold-light: #cfae7d;
+  --ink: #2b2016;
+  --ink-soft: #5a4a3a;
+
+  --heading: #5e1a1f;
+  --heading-light: #7a2530;
+
+  --error: #b3261e;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --cream: #191210;
+  --cream-dark: #211815;
+  --surface: #221a16;
+  --saffron: #eb9a44;
+  --saffron-dark: #f2ac5f;
+  --maroon: #7a2530;
+  --maroon-light: #90323f;
+  --gold: #c9a568;
+  --gold-light: #e3c48c;
+  --ink: #f3ead9;
+  --ink-soft: #cbb9a0;
+
+  --heading: #eecb8c;
+  --heading-light: #f2d9a8;
+
+  --error: #ff8a80;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  overflow-x: hidden;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.font-devanagari {
+  font-family: var(--font-devanagari);
+}
+
+/* Subtle repeating mandala-dot texture used as a section backdrop */
+.pattern-diya {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    color-mix(in srgb, var(--color-gold) 40%, transparent) 1px,
+    transparent 0
+  );
+  background-size: 22px 22px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+::selection {
+  background-color: var(--color-saffron);
+  color: white;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-saffron-dark);
+  outline-offset: 2px;
+}
